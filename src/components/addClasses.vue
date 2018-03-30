@@ -7,7 +7,7 @@
               </el-form-item>
               <el-form-item label="课程方向">
                   <el-select v-model="form.fid" placeholder="请选择方向">
-                      <el-option :label="item.fname" :value="item.fid" v-for="item in datas"></el-option>
+                      <el-option :label="item.fname" :value="item.fid" v-for="item in datas" :key="item.id"></el-option>
 
 
                   </el-select>

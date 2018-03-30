@@ -28,16 +28,19 @@
                 <el-submenu index="2">
                     <template slot="title">
                         <i class="el-icon-location"></i>
-                        <span>老师管理</span>
+                        <span>学生管理</span>
                     </template>
                     <el-menu-item-group>
-                        <template slot="title">老师查询</template>
+                        <template slot="title">
+
+                        <router-link to="/selectStu">
+                            学生查询
+                        </router-link>
+
+                        </template>
 
                     </el-menu-item-group>
-                    <el-menu-item-group>
-                        <template slot="title">添加老师</template>
 
-                    </el-menu-item-group>
                 </el-submenu>
 
                 <el-submenu index="3">
@@ -98,7 +101,12 @@
                         <span>班级管理</span>
                     </template>
                     <el-menu-item-group>
-                        <template slot="title">班级查询</template>
+                        <template slot="title">
+                            <router-link to="/selectClasses">
+                                班级查询
+                            </router-link>
+
+                        </template>
 
                     </el-menu-item-group>
                     <el-menu-item-group>

@@ -36,10 +36,18 @@
                             return e.text()
                         }).then( (e)=> {
                             if(e==="ok"){
-                                this.message="成功";
+                                this.$message({
+                                    message: '添加成功',
+                                    type: 'success',
+                                    duration:1000
+                                });
                                 this.form.fname=""
                             }else{
-                                this.message="失败";
+                                this.$message({
+                                    message: '添加失败',
+                                    type: 'error',
+                                    duration:1000
+                                });
                                 this.form.fname=""
                             }
                         })

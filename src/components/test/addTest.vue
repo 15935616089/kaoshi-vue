@@ -8,7 +8,6 @@
 
             </el-select>
         </el-form-item>
-
             <el-form-item label="题目类型">
                 <el-select v-model="form.typeid" placeholder="请选择类型" @change="change()">
                     <el-option :label="item.typename" :value="item.typeid" v-for="item in typeDatas" :key="item.typeid"></el-option>
@@ -28,7 +27,7 @@
             return{
                   form:{
                       fid:"",
-                      fname:"",
+                      typeid:""
 
                   },
                 fangxiangDatas:[],
@@ -50,12 +49,14 @@
         },
         methods:{
             change(){
+
+                var params="fid="+this.form.fid+"&typeid="+this.form.typeid;
                 if(this.form.typeid==1){
-                    this.$router.push("/option")
+                    this.$router.push("/option?"+params)
                 }else if(this.form.typeid==2){
-                    this.$router.push("/options")
+                    this.$router.push("/options?"+params)
                 }else if(this.form.typeid==3){
-                    this.$router.push("/ask")
+                    this.$router.push("/ask?"+params)
                 }
             }
         }

@@ -85,7 +85,7 @@ var router=new Router({
                   },
                   {
                       path:"/options",
-                      component:options
+                      component:option1
                   },
                   {
                       path:"/ask",

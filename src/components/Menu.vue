@@ -53,7 +53,11 @@
 
                     </el-menu-item-group>
                     <el-menu-item-group>
-                        <template slot="title">添加试题</template>
+                        <template slot="title">
+                          <router-link to="/addTest">
+                              添加试题
+                          </router-link>
+                        </template>
 
                     </el-menu-item-group>
                 </el-submenu>
@@ -68,7 +72,11 @@
 
                     </el-menu-item-group>
                     <el-menu-item-group>
-                        <template slot="title">添加类型</template>
+                        <template slot="title">
+                         <router-link to="/addType">
+                             添加类型
+                         </router-link>
+                        </template>
 
                     </el-menu-item-group>
                 </el-submenu>

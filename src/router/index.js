@@ -12,6 +12,11 @@ import selectClasses from '@/components/selectClasses'
 import selectStu from '@/components/selectStu'
 import addSignStu from '@/components/stu/addSignStu'
 import addMoreStu from '@/components/stu/addMoreStu'
+import addType from '@/components/type/addType'
+import addTest from '@/components/test/addTest'
+import option1 from '@/components/test/option'
+import options from '@/components/test/options'
+import ask from '@/components/test/ask'
 
 
 Vue.use(Router)
@@ -63,6 +68,30 @@ var router=new Router({
           {
               path:"/addMoreStu",
               component:addMoreStu
+          },
+          {
+              path:"/addType",
+              component:addType
+          },
+          {
+              path:"/addTest",
+              component:addTest,
+              //三级路由
+              children:[
+
+                  {
+                      path:"/option",
+                      component:option1
+                  },
+                  {
+                      path:"/options",
+                      component:options
+                  },
+                  {
+                      path:"/ask",
+                      component:ask
+                  }
+              ]
           }
 
       ]

@@ -42,6 +42,21 @@
                     </el-menu-item-group>
 
                 </el-submenu>
+                <el-submenu index="8">
+                    <template slot="title">
+                        <i class="el-icon-location"></i>
+                        <span>老师管理</span>
+                    </template>
+                    <el-menu-item-group>
+                        <template slot="title">
+                            <router-link to="/selectTe">
+                                老师查询
+                            </router-link>
+                        </template>
+
+                    </el-menu-item-group>
+
+                </el-submenu>
 
                 <el-submenu index="3">
                     <template slot="title">

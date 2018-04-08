@@ -10,7 +10,9 @@ import Login from '@/components/Login'
 import addClasses from '@/components/addClasses'
 import selectClasses from '@/components/selectClasses'
 import selectStu from '@/components/selectStu'
+import selectTe from '@/components/selectTe'
 import addSignStu from '@/components/stu/addSignStu'
+import addSignTe from '@/components/teach/addSignTe'
 import addMoreStu from '@/components/stu/addMoreStu'
 import addType from '@/components/type/addType'
 import addTest from '@/components/test/addTest'
@@ -60,6 +62,14 @@ var router=new Router({
           {
               path:"/selectStu",
               component:selectStu
+          },
+          {
+              path:"/selectTe",
+              component:selectTe
+          },
+          {
+              path:"/addSignTe",
+              component:addSignTe
           },
           {
               path:"/addSignStu",
